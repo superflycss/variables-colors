@@ -1,0 +1,42 @@
+{
+  "name": "@superflycss/variables-colors",
+  "version": "1.0.0",
+  "description": "Color variables",
+  "main": "src/main/css/index.css",
+  "scripts": {
+    "update": "ncu -a && npm i",
+    "clean": "gulp clean",
+    "build": "npm run clean && gulp build:css",
+    "test": "npm run build && gulp test:css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/superflycss/variables-colors.git"
+  },
+  "keywords": [
+    "colors",
+    "feedback",
+    "superfly-css",
+    "grays",
+    "weights",
+    "primary",
+    "success",
+    "info",
+    "warning",
+    "danger",
+    "global"
+  ],
+  "author": "Ole Ersoy",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/superflycss/variables-colors/issues"
+  },
+  "homepage": "https://github.com/superflycss/variables-colors#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "@superflycss/task-build": "^1.0.0",
+    "@superflycss/task-clean": "1.0.0",
+    "@superflycss/task-deploy": "1.0.0",
+    "@superflycss/task-test": "^1.0.0"
+  }
+}
