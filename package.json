@@ -1,6 +1,6 @@
 {
   "name": "@superflycss/variables-colors",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Color variables",
   "main": "src/main/css/index.css",
   "scripts": {
@@ -38,6 +38,7 @@
     "@superflycss/task-deploy": "1.0.2",
     "@superflycss/task-test": "^1.0.1",
     "gulp": "^3.9.1",
-    "npm-check-updates": "^2.12.0"
+    "npm-check-updates": "^2.12.0",
+    "hex-rgb-converter": "0.0.2"
   }
 }
