@@ -1,12 +1,19 @@
 /*
- * Copyright 2015-2016 Firefly Semantics Corporation
- * Copyright 2015-2016 Ole Ersoy
- * Copyright 2015-2016 superfly-css
- * Copyright 2011-2015 Twitter, Inc.
+ * Copyright 2016 Firefly Semantics Corporation
+ * Copyright 2016 Ole Ersoy
+ * Copyright 2016 superflycss
+ * Copyright 2011 Twitter, Inc.
+ * Copyright 2015 Google Inc
  */
 
-/*! superfly-css-variables-colors | MIT License | https://github.com/superfly-css/superfly-css-variables-colors/blob/master/LICENSE.md */
+/*! superflycss/variables-colors | MIT License | https://github.com/superflycss/variables-colors/blob/master/LICENSE.md */
 /*! bootstrap v4.0.0-alpha | MIT License | https://github.com/twbs/bootstrap/blob/master/LICENSE */
+
+
+/* =======================================
+   MATERIAL DESIGN COLORS VARIABLES
+   ======================================= */
+@import "./material-design.css";
 
 /* =======================================
    COLORS
@@ -18,6 +25,7 @@
    5: Superfly CSS Colors
    6: Browser supported color names
    7: Three digit color codes
+   8: Material design color palette
    --------------------------------------
    -- Naming Conventions --
    --------------------------------------
@@ -304,12 +312,14 @@
 }
 
 /* 7 */
+:root {
 @for $a from 0 to 9 {
     @for $b from 0 to 9 {
           @for $c from 0 to 9 {
-            :root {
             --color-$(a)$(b)$(c): #$(a)$(b)$(c);
             }
-          }
+        }
     }
 }
+
+/* 8 */
