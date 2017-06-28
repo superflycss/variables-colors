@@ -1,0 +1,17 @@
+/* =======================================
+   PERCENTAGES USED IN COLOR CALCULATIONS
+   ======================================= */
+:root {
+ --percentage-lightest:  91%;
+ --percentage-lighter:   78%;
+ --percentage-light:     65%;
+ --percentage-median:    52%;
+ --percentage-dark:      39%;
+ --percentage-darker:    26%;
+ --percentage-darkest:   13%;
+
+ --percentage-low: 25%;
+ --percentage-high:  50%;
+
+ --percentage-link-hover: 25%;
+}

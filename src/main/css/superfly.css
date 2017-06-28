@@ -1,0 +1,26 @@
+/* =======================================
+SUPERFLYCSS COLORS
+======================================= */
+
+:root {
+  --color-neon-mustard: #e1eb10;
+  --color-soft-white: #F8F8F7;
+  --color-tomato-red: #E1332D;
+  --color-purple-pink: #e91e63;
+  --color-light-orange-red: #ff5722;
+  --color-silver-grey: #9e9e9e;
+}
+
+:root {
+  @each $color in neon-mustard, soft-white, tomato-red, purple-pink, light-orange-red, silver-grey {
+    --u-text-color-$(color) {
+      color: var(--color-$(color));
+    }
+    --u-background-color-$(color) {
+      background-color: var(--color-$(color));
+    }
+    --u-border-color-$(color) {
+      border-color: var(--color-$(color));
+    }
+  }
+}

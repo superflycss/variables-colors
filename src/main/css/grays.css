@@ -1,0 +1,38 @@
+/** @define variables */
+@import "./percentages.css";
+/* =======================================
+   SPECTRUM OF GRAYS
+   ======================================= */
+:root {
+  --color-gray-base: #000;
+
+  --color-gray-lightest: color(var(--color-gray-base) lightness(var(--percentage-lightest)));
+  --color-gray-lighter:  color(var(--color-gray-base) lightness(var(--percentage-lighter)));
+  --color-gray-light:    color(var(--color-gray-base) lightness(var(--percentage-light)));
+  --color-gray:          color(var(--color-gray-base) lightness(var(--percentage-median)));
+  --color-gray-dark:     color(var(--color-gray-base) lightness(var(--percentage-dark)));
+  --color-gray-darker:   color(var(--color-gray-base) lightness(var(--percentage-darker)));
+  --color-gray-darkest:  color(var(--color-gray-base) lightness(var(--percentage-darkest)));
+
+  --color-gray-100: var(--color-gray-lightest);
+  --color-gray-300: var(--color-gray-lighter);
+  --color-gray-400: var(--color-gray-light);
+  --color-gray-500: var(--color-gray);
+  --color-gray-600: var(--color-gray-dark);
+  --color-gray-700: var(--color-gray-darker);
+  --color-gray-900: var(--color-gray-darkest);
+}
+
+@each $weight in 100, 300, 400, 500, 600, 700, 900 {
+    :root {
+      --u-background-color-gray-$(weight) {
+          background-color: var(--color-gray-$(weight)) !important;
+        }
+      --u-text-color-gray-$(weight) {
+          color: var(--color-gray-$(weight)) !important;
+      }
+      --u-border-color-gray-$(weight) {
+          color: var(--color-gray-$(weight)) !important;
+      }
+    }
+}

@@ -8,23 +8,10 @@
 /*! superflycss/variables-colors | MIT License | https://github.com/superflycss/variables-colors/blob/master/LICENSE.md */
 /*! bootstrap v4.0.0-alpha | MIT License | https://github.com/twbs/bootstrap/blob/master/LICENSE */
 
-
-/* =======================================
-   MATERIAL DESIGN COLORS VARIABLES
-   ======================================= */
-@import "./material-design.css";
-
 /* =======================================
    COLORS
-   0: Percentages used in color calculations
-   1: Spectrum of grays
-   2: Notification colors
-   3: Global style colors for links, etc.
-   4: Feedback states
-   5: Superfly CSS Colors
-   6: Browser supported color names
-   7: Three digit color codes
-   8: Material design color palette
+   1: Global style colors for links, etc.
+   2: Feedback states
    --------------------------------------
    -- Naming Conventions --
    --------------------------------------
@@ -43,85 +30,38 @@
    [100, 300, 500, 700, 900].
    ======================================= */
 
-/* 0 */
-:root {
-  --percentage-lightest:  91%;
-  --percentage-lighter:   78%;
-  --percentage-light:     65%;
-  --percentage-median:    52%;
-  --percentage-dark:      39%;
-  --percentage-darker:    26%;
-  --percentage-darkest:   13%;
 
-  --percentage-low: 25%;
-  --percentage-high:  50%;
+/* =======================================
+MATERIAL DESIGN COLORS VARIABLES
+======================================= */
+@import "./material-design.css";
+/* =======================================
+PERCENTAGES USED IN COLOR CALCULATIONS
+======================================= */
+@import "./percentages.css";
+/* =======================================
+NOTIFICATION COLORS
+======================================= */
+@import "./notifications.css";
+/* =======================================
+SPECTRUM OF GRAYS
+======================================= */
+@import "./grays.css";
+/* =======================================
+BROWSER SUPPORTED COLOR NAMES
+======================================= */
+@import "./browser.css";
+/* =======================================
+THREE DIGIT COLOR CODES
+======================================= */
+@import "./three.css";
+/* =======================================
+SUPERFLYCSS COLORS
+======================================= */
+@import "./superfly.css";
 
-  --percentage-link-hover: 25%;
-}
 
 /* 1 */
-:root {
-  --color-gray-base: #000;
-
-  --color-gray-lightest: color(var(--color-gray-base) lightness(var(--percentage-lightest)));
-  --color-gray-lighter:  color(var(--color-gray-base) lightness(var(--percentage-lighter)));
-  --color-gray-light:    color(var(--color-gray-base) lightness(var(--percentage-light)));
-  --color-gray:          color(var(--color-gray-base) lightness(var(--percentage-median)));
-  --color-gray-dark:     color(var(--color-gray-base) lightness(var(--percentage-dark)));
-  --color-gray-darker:   color(var(--color-gray-base) lightness(var(--percentage-darker)));
-  --color-gray-darkest:  color(var(--color-gray-base) lightness(var(--percentage-darkest)));
-
-  --color-gray-100: var(--color-gray-lightest);
-  --color-gray-300: var(--color-gray-lighter);
-  --color-gray-400: var(--color-gray-light);
-  --color-gray-500: var(--color-gray);
-  --color-gray-600: var(--color-gray-dark);
-  --color-gray-700: var(--color-gray-darker);
-  --color-gray-900: var(--color-gray-darkest);
-}
-
-/* 2 */
-:root {
-  --color-primary:         #0275d8;
-  --color-success:         #5cb85c;
-  --color-info:            #5bc0de;
-  --color-warning:         #f0ad4e;
-  --color-danger:          #d9534f;
-}
-
-:root {
-  --color-primary-100: color(var(--color-primary) whiteness(var(--percentage-high)));
-  --color-primary-300: color(var(--color-primary) whiteness(var(--percentage-low)));
-  --color-primary-500: var(--color-primary);
-  --color-primary-700: color(var(--color-primary) blackness(var(--percentage-low)));
-  --color-primary-900: color(var(--color-primary) blackness(var(--percentage-high)));
-
-  --color-success-100: color(var(--color-success) whiteness(var(--percentage-high)));
-  --color-success-300: color(var(--color-success) whiteness(var(--percentage-low)));
-  --color-success-500: var(--color-success);
-  --color-success-700: color(var(--color-success) blackness(var(--percentage-low)));
-  --color-success-900: color(var(--color-success) blackness(var(--percentage-high)));
-
-  --color-info-100: color(var(--color-info) whiteness(var(--percentage-high)));
-  --color-info-300: color(var(--color-info) whiteness(var(--percentage-low)));
-  --color-info-500: var(--color-info);
-  --color-info-700: color(var(--color-info) blackness(var(--percentage-low)));
-  --color-info-900: color(var(--color-info) blackness(var(--percentage-high)));
-
-  --color-warning-100: color(var(--color-warning) whiteness(var(--percentage-high)));
-  --color-warning-300: color(var(--color-warning) whiteness(var(--percentage-low)));
-  --color-warning-500: var(--color-warning);
-  --color-warning-700: color(var(--color-warning) blackness(var(--percentage-low)));
-  --color-warning-900: color(var(--color-warning) blackness(var(--percentage-high)));
-
-  --color-danger-100: color(var(--color-danger) whiteness(var(--percentage-high)));
-  --color-danger-300: color(var(--color-danger) whiteness(var(--percentage-low)));
-  --color-danger-500: var(--color-danger);
-  --color-danger-700: color(var(--color-danger) blackness(var(--percentage-low)));
-  --color-danger-900: color(var(--color-danger) blackness(var(--percentage-high)));
-}
-
-/* 3 */
 :root {
   --color-white:                   #fff;
   --color-text:                    var(--color-gray-dark);
@@ -136,7 +76,7 @@
   --color-table-border-color:      var(--color-gray-lighter);
 }
 
-/* 4 */
+/* 2 */
 :root {
   --state-success-text:        #3c763d;
   --state-success-background:  #dff0d8;
@@ -155,170 +95,11 @@
   --state-danger-border:       color(var(--state-danger-background) blackness(5%));
 }
 
-
-/* 5 */
-:root {
-  --color-neon-mustard: #e1eb10;
-  --color-soft-white: #F8F8F7;
-  --color-tomato-red: #E1332D;
-  --color-purple-pink: #e91e63;
-  --color-light-orange-red: #ff5722;
-  --color-silver-grey: #9e9e9e;
-}
-
-/* 6 */
-:root {
-  --color-alice-blue: AliceBlue;
-  --color-antique-white: AntiqueWhite;
-  --color-aqua: Aqua;
-  --color-aqua-marine: AquaMarine;
-  --color-azure: Azure;
-  --color-beige: Beige;
-  --color-bisque: Bisque;
-  --color-black: Black;
-  --color-blanched-almond: BlanchedAlmond;
-  --color-blue: Blue;
-  --color-blue-violet: BlueViolet;
-  --color-brown: Brown;
-  --color-burly-wood: BurlyWood;
-  --color-cadet-blue: CadetBlue;
-  --color-chartreuse: Chartreuse;
-  --color-chocolate: Chocolate;
-  --color-coral: Coral;
-  --color-corn-flower-blue: CornFlowerBlue;
-  --color-cornsilk: Cornsilk;
-  --color-crimson: Crimson;
-  --color-cyan: Cyan;
-  --color-dark-blue: DarkBlue;
-  --color-dark-cyan: DarkCyan;
-  --color-dark-golden-rod: DarkGoldenRod;
-  --color-dark-gray: DarkGray;
-  --color-dark-green: DarkGreen;
-  --color-dark-khaki: DarkKhaki;
-  --color-dark-magenta: DarkMagenta;
-  --color-dark-olive-green: DarkOliveGreen;
-  --color-dark-orange: DarkOrange;
-  --color-dark-orchid: DarkOrchid;
-  --color-dark-red: DarkRed;
-  --color-dark-salmon: DarkSalmon;
-  --color-dark-sea-green: DarkSeaGreen;
-  --color-dark-slate-blue: DarkSlateBlue;
-  --color-dark-slate-gray: DarkSlateGray;
-  --color-dark-turquoise: DarkTurquoise;
-  --color-dark-violet: DarkViolet;
-  --color-deep-pink: DeepPink;
-  --color-deep-sky-blue: DeepSkyBlue;
-  --color-dim-gray: DimGray;
-  --color-dodger-blue: DodgerBlue;
-  --color-fire-brick: FireBrick;
-  --color-floral-white: FloralWhite;
-  --color-forest-green: ForestGreen;
-  --color-fuchsia: Fuchsia;
-  --color-gainsboro: Gainsboro;
-  --color-ghost-white: GhostWhite;
-  --color-gold: Gold;
-  --color-golden-rod: GoldenRod;
-  --color-gray: Gray;
-  --color-green: Green;
-  --color-green-yellow: GreenYellow;
-  --color-honey-dew: HoneyDew;
-  --color-hot-pink: HotPink;
-  --color-indian-red: IndianRed;
-  --color-indigo: Indigo;
-  --color-ivory: Ivory;
-  --color-khaki: Khaki;
-  --color-lavender: Lavender;
-  --color-lavender-blush: LavenderBlush;
-  --color-lawn-green: LawnGreen;
-  --color-lemon-chiffon: LemonChiffon;
-  --color-light-blue: LightBlue;
-  --color-light-coral: LightCoral;
-  --color-light-cyan: LightCyan;
-  --color-light-goldenrod-yellow: LightGoldenrodYellow;
-  --color-light-gray: LightGray;
-  --color-light-green: LightGreen;
-  --color-light-pink: LightPink;
-  --color-light-salmon: LightSalmon;
-  --color-light-sea-green: LightSeaGreen;
-  --color-light-sky-blue: LightSkyBlue;
-  --color-light-slate-gray: LightSlateGray;
-  --color-light-steel-blue: LightSteelBlue;
-  --color-light-yellow: LightYellow;
-  --color-lime: Lime;
-  --color-lime-green: LimeGreen;
-  --color-linen: Linen;
-  --color-magenta: Magenta;
-  --color-maroon: Maroon;
-  --color-medium-aquamarine: MediumAquaMarine;
-  --color-medium-blue: MediumBlue;
-  --color-medium-orchid: MediumOrchid;
-  --color-medium-purple: MediumPurple;
-  --color-medium-sea-green: MediumSeaGreen;
-  --color-medium-slate-blue: MediumSlateBlue;
-  --color-medium-spring-green: MediumSpringGreen;
-  --color-medium-turquoise: MediumTurquoise;
-  --color-medium-violet-red: MediumVioletRed;
-  --color-midnight-blue: MidnightBlue;
-  --color-mint-cream: MintCream;
-  --color-misty-rose: misty-rose;
-  --color-moccasin: Moccasin;
-  --color-navajo-white: NavajoWhite;
-  --color-navy: Navy;
-  --color-old-lace: OldLace;
-  --color-olive: Olive;
-  --color-olive-drab: OliveDrab;
-  --color-orange: Orange;
-  --color-orange-red: OrangeRed;
-  --color-orchid: Orchid;
-  --color-pale-golden-rod: PaleGoldenRod;
-  --color-pale-green: PaleGreen;
-  --color-pale-turquoise: PaleTurquoise;
-  --color-pale-violet-red: PaleVioletRed;
-  --color-papaya-whip: PapayaWhip;
-  --color-peach-puff: PeachPuff;
-  --color-peru: Peru;
-  --color-pink: Pink;
-  --color-plum: Plum;
-  --color-powder-blue: PowderBlue;
-  --color-purple: Purple;
-  --color-red: Red;
-  --color-rosy-brown: RosyBrown;
-  --color-royal-blue: RoyalBlue;
-  --color-saddle-brown: SaddleBrown;
-  --color-salmon: Salmon;
-  --color-sandy-brown: SandyBrown;
-  --color-sea-green: SeaGreen;
-  --color-sea-shell: SeaShell;
-  --color-sienna: Sienna;
-  --color-silver: Silver;
-  --color-sky-blue: SkyBlue;
-  --color-slate-blue: SlateBlue;
-  --color-slate-gray: SlateGray;
-  --color-snow: Snow;
-  --color-spring-green: SpringGreen;
-  --color-steel-blue: SteelBlue;
-  --color-tan: Tan;
-  --color-teal: Teal;
-  --color-thistle: Thistle;
-  --color-tomato: Tomato;
-  --color-turquoise: Turquoise;
-  --color-violet: Violet;
-  --color-wheat: Wheat;
-  --color-white: White;
-  --color-white-smoke: WhiteSmoke;
-  --color-yellow: Yellow;
-  --color-yellow-green: YellowGreen;
-}
-
-/* 7 */
-:root {
-@for $a from 0 to 9 {
-    @for $b from 0 to 9 {
-          @for $c from 0 to 9 {
-            --color-$(a)$(b)$(c): #$(a)$(b)$(c);
-            }
-        }
-    }
-}
-
-/* 8 */
+/**
+ * Inherit the ancestor's text color.
+ */
+ :root {
+   --u-text-inherit-color {
+     color: inherit;
+   }
+ }
