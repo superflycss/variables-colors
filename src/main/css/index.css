@@ -9,9 +9,6 @@
 /*! bootstrap v4.0.0-alpha | MIT License | https://github.com/twbs/bootstrap/blob/master/LICENSE */
 
 /* =======================================
-   COLORS
-   1: Global style colors for links, etc.
-   2: Feedback states
    --------------------------------------
    -- Naming Conventions --
    --------------------------------------
@@ -43,10 +40,6 @@ PERCENTAGES USED IN COLOR CALCULATIONS
 NOTIFICATION COLORS
 ======================================= */
 @import "./notifications.css";
-/* =======================================
-SPECTRUM OF GRAYS
-======================================= */
-@import "./grays.css";
 /* =======================================
 BROWSER SUPPORTED COLOR NAMES
 ======================================= */
