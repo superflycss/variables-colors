@@ -3,6 +3,7 @@ SUPERFLYCSS COLORS
 ======================================= */
 
 :root {
+  --color-sf-tennis-ball: #CDDC38;
   --color-sf-neon-mustard: #e1eb10;
   --color-sf-soft-white: #F8F8F7;
   --color-sf-tomato-red: #E1332D;
@@ -13,7 +14,7 @@ SUPERFLYCSS COLORS
 }
 
 :root {
-  @each $color in neon-mustard, soft-white, tomato-red, purple-pink, light-orange-red, silver-grey, charcoal-blue {
+  @each $color in tennis-ball, neon-mustard, soft-white, tomato-red, purple-pink, light-orange-red, silver-grey, charcoal-blue {
     --u-text-sf-color-$(color) {
       color: var(--color-sf-$(color));
     }
