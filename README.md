@@ -1,5 +1,7 @@
 # Color variables
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/superflycss/variables-colors.svg)](https://greenkeeper.io/)
+
 ## Installation
 
 See [Installation](https://github.com/superfly-css/superfly-css/#installation).
