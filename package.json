@@ -34,8 +34,8 @@
   "homepage": "https://github.com/superflycss/variables-colors#readme",
   "devDependencies": {
     "@superflycss/task-build": "^1.0.5",
-    "@superflycss/task-clean": "1.0.0",
-    "@superflycss/task-deploy": "2.0.3",
+    "@superflycss/task-clean": "1.0.2",
+    "@superflycss/task-deploy": "2.1.2",
     "@superflycss/task-test": "^1.0.1",
     "gulp": "^3.9.1",
     "npm-check-updates": "^2.12.1",
