@@ -31,34 +31,34 @@
 /* =======================================
 MATERIAL DESIGN COLORS VARIABLES
 ======================================= */
-@import "./material-design.css";
+@import "./material-design/";
 /* =======================================
 PERCENTAGES USED IN COLOR CALCULATIONS
 ======================================= */
-@import "./percentages.css";
+@import "./percentages/";
 /* =======================================
 NOTIFICATION COLORS
 ======================================= */
-@import "./notifications.css";
+@import "./notifications/";
 /* =======================================
 BROWSER SUPPORTED COLOR NAMES
 ======================================= */
-@import "./browser.css";
+@import "./browser/";
 /* =======================================
 THREE DIGIT COLOR CODES
 ======================================= */
-@import "./three.css";
+@import "./three/";
 /* =======================================
 SUPERFLYCSS COLORS
 ======================================= */
-@import "./superfly.css";
+@import "./superfly/";
 
 
 /* 1 */
 :root {
   --color-white:                   #fff;
-  --color-text:                    var(--color-gray-dark);
-  --color-text-muted:              var(--color-gray-light);
+  --color-text:                    var(--color-dark-gray);
+  --color-text-muted:              var(--color-light-gray);
   --color-link:                    var(--color-primary);
   --color-link-hover:              color(var(--color-link) blackness(var(--percentage-link-hover)));
   --color-abbr-border:             var(--color-gray-light);

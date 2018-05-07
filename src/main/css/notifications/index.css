@@ -2,7 +2,7 @@
    NOTIFICATION COLORS
    ======================================= */
 
-@import "./percentages.css";
+@import "../percentages/";
  :root {
   --color-primary: #0275d8;
   --color-success: #5cb85c;
