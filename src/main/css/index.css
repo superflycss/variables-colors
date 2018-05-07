@@ -61,7 +61,7 @@ SUPERFLYCSS COLORS
   --color-text-muted:              var(--color-light-gray);
   --color-link:                    var(--color-primary);
   --color-link-hover:              color(var(--color-link) blackness(var(--percentage-link-hover)));
-  --color-abbr-border:             var(--color-gray-light);
+  --color-abbr-border:             var(--color-light-gray);
   --color-table-background:        transparent;
   --color-table-background-accent: #f9f9f9;
   --color-table-background-hover:  #f5f5f5;
