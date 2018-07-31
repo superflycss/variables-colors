@@ -4,11 +4,13 @@
 
 @import "../percentages/";
  :root {
-  --color-primary: #0275d8;
+  --color-primary: #007bff;
+  --color-secondary: #6c757d;
   --color-success: #5cb85c;
-  --color-info: #5bc0de;
-  --color-warning: #f0ad4e;
-  --color-danger: #d9534f;
+  --color-info: #17a2b8;
+  --color-warning: #ffc107;
+  --color-danger: #dc3545;
+  --color-dark: #343a40;
 }
 
  :root {
@@ -17,30 +19,46 @@
   --color-primary-500: var(--color-primary);
   --color-primary-700: color(var(--color-primary) blackness(var(--percentage-low)));
   --color-primary-900: color(var(--color-primary) blackness(var(--percentage-high)));
+ 
+  --color-secondary-100: color(var(--color-secondary) whiteness(var(--percentage-high)));
+  --color-secondary-300: color(var(--color-secondary) whiteness(var(--percentage-low)));
+  --color-secondary-500: var(--color-secondary);
+  --color-secondary-700: color(var(--color-secondary) blackness(var(--percentage-low)));
+  --color-secondary-900: color(var(--color-secondary) blackness(var(--percentage-high)));
+ 
   --color-success-100: color(var(--color-success) whiteness(var(--percentage-high)));
   --color-success-300: color(var(--color-success) whiteness(var(--percentage-low)));
   --color-success-500: var(--color-success);
   --color-success-700: color(var(--color-success) blackness(var(--percentage-low)));
   --color-success-900: color(var(--color-success) blackness(var(--percentage-high)));
+ 
   --color-info-100: color(var(--color-info) whiteness(var(--percentage-high)));
   --color-info-300: color(var(--color-info) whiteness(var(--percentage-low)));
   --color-info-500: var(--color-info);
   --color-info-700: color(var(--color-info) blackness(var(--percentage-low)));
   --color-info-900: color(var(--color-info) blackness(var(--percentage-high)));
+ 
   --color-warning-100: color(var(--color-warning) whiteness(var(--percentage-high)));
   --color-warning-300: color(var(--color-warning) whiteness(var(--percentage-low)));
   --color-warning-500: var(--color-warning);
   --color-warning-700: color(var(--color-warning) blackness(var(--percentage-low)));
   --color-warning-900: color(var(--color-warning) blackness(var(--percentage-high)));
+ 
   --color-danger-100: color(var(--color-danger) whiteness(var(--percentage-high)));
   --color-danger-300: color(var(--color-danger) whiteness(var(--percentage-low)));
   --color-danger-500: var(--color-danger);
   --color-danger-700: color(var(--color-danger) blackness(var(--percentage-low)));
   --color-danger-900: color(var(--color-danger) blackness(var(--percentage-high)));
+
+  --color-dark-100: color(var(--color-dark) whiteness(var(--percentage-high)));
+  --color-dark-300: color(var(--color-dark) whiteness(var(--percentage-low)));
+  --color-dark-500: var(--color-dark);
+  --color-dark-700: color(var(--color-dark) blackness(var(--percentage-low)));
+  --color-dark-900: color(var(--color-dark) blackness(var(--percentage-high)));
 }
 
 @each $weight in 100, 300, 500, 700, 900 {
-  @each $brand in primary, success, info, warning, danger {
+  @each $brand in primary, secondary, success, info, warning, danger, dark {
      :root {
       --u-background-color-$(brand)-$(weight) {
         background-color: var(--color-$(brand)-$(weight));
