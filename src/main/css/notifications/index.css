@@ -11,6 +11,7 @@
   --color-warning: #ffc107;
   --color-danger: #dc3545;
   --color-dark: #343a40;
+  --color-light: #f8f9fa;
 }
 
  :root {
@@ -55,10 +56,16 @@
   --color-dark-500: var(--color-dark);
   --color-dark-700: color(var(--color-dark) blackness(var(--percentage-low)));
   --color-dark-900: color(var(--color-dark) blackness(var(--percentage-high)));
+
+  --color-light-100: color(var(--color-light) whiteness(var(--percentage-high)));
+  --color-light-300: color(var(--color-light) whiteness(var(--percentage-low)));
+  --color-light-500: var(--color-light);
+  --color-light-700: color(var(--color-light) blackness(var(--percentage-low)));
+  --color-light-900: color(var(--color-light) blackness(var(--percentage-high)));
 }
 
 @each $weight in 100, 300, 500, 700, 900 {
-  @each $brand in primary, secondary, success, info, warning, danger, dark {
+  @each $brand in primary, secondary, success, info, warning, danger, dark, light {
      :root {
       --u-background-color-$(brand)-$(weight) {
         background-color: var(--color-$(brand)-$(weight));

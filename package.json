@@ -1,6 +1,6 @@
 {
   "name": "@superflycss/variables-colors",
-  "version": "3.0.5",
+  "version": "3.0.6",
   "description": "Color variables",
   "main": "index.css",
   "scripts": {
