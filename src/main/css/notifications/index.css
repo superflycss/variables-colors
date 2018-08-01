@@ -8,6 +8,7 @@
    ======================================= */
 
 @import "../percentages/";
+@import "../";
  :root {
   --color-primary: #007bff;
   --color-secondary: #6c757d;
@@ -19,7 +20,7 @@
   --color-light: #f8f9fa;
 }
 
- :root {
+:root {
   --color-primary-100: color(var(--color-primary) tint(var(--percentage-40)));
   --color-primary-300: color(var(--color-primary) tint(var(--percentage-20)));
   --color-primary-500: var(--color-primary);
@@ -67,10 +68,16 @@
   --color-light-500: var(--color-light);
   --color-light-700: color(var(--color-light) shade(var(--percentage-20)));
   --color-light-900: color(var(--color-light) shade(var(--percentage-40)));
+
+  --color-link-100: color(var(--color-link) tint(var(--percentage-40)));
+  --color-link-300: color(var(--color-link) tint(var(--percentage-20)));
+  --color-link-500: var(--color-link);
+  --color-link-700: color(var(--color-link) shade(var(--percentage-20)));
+  --color-link-900: color(var(--color-link) shade(var(--percentage-40)));
 }
 
 @each $weight in 100, 300, 500, 700, 900 {
-  @each $brand in primary, secondary, success, info, warning, danger, dark, light {
+  @each $brand in primary, secondary, success, info, warning, danger, dark, light, link {
      :root {
       --u-background-color-$(brand)-$(weight) {
         background-color: var(--color-$(brand)-$(weight));
@@ -80,7 +87,7 @@
 }
 
 @each $weight in 100, 300, 500, 700, 900 {
-  @each $brand in primary, secondary, success, info, warning, danger, dark, light {
+  @each $brand in primary, secondary, success, info, warning, danger, dark, light, link {
      :root {
       --u-border-color-$(brand)-$(weight) {
         border-color: var(--color-$(brand)-$(weight));
@@ -90,7 +97,7 @@
 }
 
 @each $weight in 100, 300, 500, 700, 900 {
-  @each $brand in primary, secondary, success, info, warning, danger, dark, light {
+  @each $brand in primary, secondary, success, info, warning, danger, dark, light, link {
      :root {
       --u-text-color-$(brand)-$(weight) {
         color: var(--color-$(brand)-$(weight));
@@ -100,7 +107,7 @@
 }
 
 @each $weight in 100, 300, 500, 700, 900 {
-  @each $brand in primary, secondary, success, info, warning, danger, dark, light {
+  @each $brand in primary, secondary, success, info, warning, danger, dark, light, link {
      :root {
       --u-bgc-$(brand)-$(weight) {
         background-color: var(--color-$(brand)-$(weight));
@@ -110,7 +117,7 @@
 }
 
 @each $weight in 100, 300, 500, 700, 900 {
-  @each $brand in primary, secondary, success, info, warning, danger, dark, light {
+  @each $brand in primary, secondary, success, info, warning, danger, dark, light, link {
      :root {
       --u-bdc-$(brand)-$(weight) {
         border-color: var(--color-$(brand)-$(weight));
@@ -120,7 +127,7 @@
 }
 
 @each $weight in 100, 300, 500, 700, 900 {
-  @each $brand in primary, secondary, success, info, warning, danger, dark, light {
+  @each $brand in primary, secondary, success, info, warning, danger, dark, light, link {
      :root {
       --u-tc-$(brand)-$(weight) {
         color: var(--color-$(brand)-$(weight));
