@@ -20,53 +20,53 @@
 }
 
  :root {
-  --color-primary-100: color(var(--color-primary) lightness(var(--percentage-high)));
-  --color-primary-300: color(var(--color-primary) lightness(var(--percentage-low)));
+  --color-primary-100: color(var(--color-primary) tint(var(--percentage-40)));
+  --color-primary-300: color(var(--color-primary) tint(var(--percentage-20)));
   --color-primary-500: var(--color-primary);
-  --color-primary-700: color(var(--color-primary) blackness(var(--percentage-low)));
-  --color-primary-900: color(var(--color-primary) blackness(var(--percentage-high)));
+  --color-primary-700: color(var(--color-primary) shade(var(--percentage-20)));
+  --color-primary-900: color(var(--color-primary) shade(var(--percentage-40)));
  
-  --color-secondary-100: color(var(--color-secondary) lightness(var(--percentage-high)));
-  --color-secondary-300: color(var(--color-secondary) lightness(var(--percentage-low)));
+  --color-secondary-100: color(var(--color-secondary) tint(var(--percentage-40)));
+  --color-secondary-300: color(var(--color-secondary) tint(var(--percentage-20)));
   --color-secondary-500: var(--color-secondary);
-  --color-secondary-700: color(var(--color-secondary) blackness(var(--percentage-low)));
-  --color-secondary-900: color(var(--color-secondary) blackness(var(--percentage-high)));
+  --color-secondary-700: color(var(--color-secondary) shade(var(--percentage-20)));
+  --color-secondary-900: color(var(--color-secondary) shade(var(--percentage-40)));
  
-  --color-success-100: color(var(--color-success) lightness(var(--percentage-high)));
-  --color-success-300: color(var(--color-success) lightness(var(--percentage-low)));
+  --color-success-100: color(var(--color-success) tint(var(--percentage-40)));
+  --color-success-300: color(var(--color-success) tint(var(--percentage-20)));
   --color-success-500: var(--color-success);
-  --color-success-700: color(var(--color-success) blackness(var(--percentage-low)));
-  --color-success-900: color(var(--color-success) blackness(var(--percentage-high)));
+  --color-success-700: color(var(--color-success) shade(var(--percentage-20)));
+  --color-success-900: color(var(--color-success) shade(var(--percentage-40)));
  
-  --color-info-100: color(var(--color-info) lightness(var(--percentage-high)));
-  --color-info-300: color(var(--color-info) lightness(var(--percentage-low)));
+  --color-info-100: color(var(--color-info) tint(var(--percentage-40)));
+  --color-info-300: color(var(--color-info) tint(var(--percentage-20)));
   --color-info-500: var(--color-info);
-  --color-info-700: color(var(--color-info) blackness(var(--percentage-low)));
-  --color-info-900: color(var(--color-info) blackness(var(--percentage-high)));
+  --color-info-700: color(var(--color-info) shade(var(--percentage-20)));
+  --color-info-900: color(var(--color-info) shade(var(--percentage-40)));
  
-  --color-warning-100: color(var(--color-warning) lightness(var(--percentage-high)));
-  --color-warning-300: color(var(--color-warning) lightness(var(--percentage-low)));
+  --color-warning-100: color(var(--color-warning) tint(var(--percentage-40)));
+  --color-warning-300: color(var(--color-warning) tint(var(--percentage-20)));
   --color-warning-500: var(--color-warning);
-  --color-warning-700: color(var(--color-warning) blackness(var(--percentage-low)));
-  --color-warning-900: color(var(--color-warning) blackness(var(--percentage-high)));
+  --color-warning-700: color(var(--color-warning) shade(var(--percentage-20)));
+  --color-warning-900: color(var(--color-warning) shade(var(--percentage-40)));
  
-  --color-danger-100: color(var(--color-danger) lightness(var(--percentage-high)));
-  --color-danger-300: color(var(--color-danger) lightness(var(--percentage-low)));
+  --color-danger-100: color(var(--color-danger) tint(var(--percentage-40)));
+  --color-danger-300: color(var(--color-danger) tint(var(--percentage-20)));
   --color-danger-500: var(--color-danger);
-  --color-danger-700: color(var(--color-danger) blackness(var(--percentage-low)));
-  --color-danger-900: color(var(--color-danger) blackness(var(--percentage-high)));
+  --color-danger-700: color(var(--color-danger) shade(var(--percentage-20)));
+  --color-danger-900: color(var(--color-danger) shade(var(--percentage-40)));
 
-  --color-dark-100: color(var(--color-dark) lightness(var(--percentage-high)));
-  --color-dark-300: color(var(--color-dark) lightness(var(--percentage-low)));
+  --color-dark-100: color(var(--color-dark) tint(var(--percentage-40)));
+  --color-dark-300: color(var(--color-dark) tint(var(--percentage-20)));
   --color-dark-500: var(--color-dark);
-  --color-dark-700: color(var(--color-dark) blackness(var(--percentage-low)));
-  --color-dark-900: color(var(--color-dark) blackness(var(--percentage-high)));
+  --color-dark-700: color(var(--color-dark) shade(var(--percentage-20)));
+  --color-dark-900: color(var(--color-dark) shade(var(--percentage-40)));
 
-  --color-light-100: color(var(--color-light) lightness(var(--percentage-high)));
-  --color-light-300: color(var(--color-light) lightness(var(--percentage-low)));
+  --color-light-100: color(var(--color-light) tint(var(--percentage-40)));
+  --color-light-300: color(var(--color-light) tint(var(--percentage-20)));
   --color-light-500: var(--color-light);
-  --color-light-700: color(var(--color-light) blackness(var(--percentage-low)));
-  --color-light-900: color(var(--color-light) blackness(var(--percentage-high)));
+  --color-light-700: color(var(--color-light) shade(var(--percentage-20)));
+  --color-light-900: color(var(--color-light) shade(var(--percentage-40)));
 }
 
 @each $weight in 100, 300, 500, 700, 900 {
