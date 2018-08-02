@@ -82,6 +82,11 @@
       --u-background-color-$(brand)-$(weight) {
         background-color: var(--color-$(brand)-$(weight));
       }
+      :root {
+        --u-bgc-$(brand)-$(weight) {
+          background-color: var(--color-$(brand)-$(weight));
+        }
+      }
     }
   }
 }
@@ -92,6 +97,11 @@
       --u-border-color-$(brand)-$(weight) {
         border-color: var(--color-$(brand)-$(weight));
       }
+      :root {
+        --u-bdc-$(brand)-$(weight) {
+          border-color: var(--color-$(brand)-$(weight));
+        }
+      }  
     }
   }
 }
@@ -102,36 +112,11 @@
       --u-text-color-$(brand)-$(weight) {
         color: var(--color-$(brand)-$(weight));
       }
-    }
-  }
-}
-
-@each $weight in 100, 300, 500, 700, 900 {
-  @each $brand in primary, secondary, success, info, warning, danger, dark, light, link {
-     :root {
-      --u-bgc-$(brand)-$(weight) {
-        background-color: var(--color-$(brand)-$(weight));
-      }
-    }
-  }
-}
-
-@each $weight in 100, 300, 500, 700, 900 {
-  @each $brand in primary, secondary, success, info, warning, danger, dark, light, link {
-     :root {
-      --u-bdc-$(brand)-$(weight) {
-        border-color: var(--color-$(brand)-$(weight));
-      }
-    }
-  }
-}
-
-@each $weight in 100, 300, 500, 700, 900 {
-  @each $brand in primary, secondary, success, info, warning, danger, dark, light, link {
-     :root {
-      --u-tc-$(brand)-$(weight) {
-        color: var(--color-$(brand)-$(weight));
-      }
+      :root {
+        --u-tc-$(brand)-$(weight) {
+          color: var(--color-$(brand)-$(weight));
+        }
+      }  
     }
   }
 }
