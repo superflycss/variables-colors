@@ -9,7 +9,7 @@
 
 @import "../percentages/";
 @import "../";
- :root {
+:root {
   --color-primary: #007bff;
   --color-secondary: #6c757d;
   --color-success: #5cb85c;
@@ -26,31 +26,39 @@
   --color-primary-500: var(--color-primary);
   --color-primary-700: color(var(--color-primary) shade(var(--percentage-20)));
   --color-primary-900: color(var(--color-primary) shade(var(--percentage-40)));
- 
-  --color-secondary-100: color(var(--color-secondary) tint(var(--percentage-40)));
-  --color-secondary-300: color(var(--color-secondary) tint(var(--percentage-20)));
+
+  --color-secondary-100: color(
+    var(--color-secondary) tint(var(--percentage-40))
+  );
+  --color-secondary-300: color(
+    var(--color-secondary) tint(var(--percentage-20))
+  );
   --color-secondary-500: var(--color-secondary);
-  --color-secondary-700: color(var(--color-secondary) shade(var(--percentage-20)));
-  --color-secondary-900: color(var(--color-secondary) shade(var(--percentage-40)));
- 
+  --color-secondary-700: color(
+    var(--color-secondary) shade(var(--percentage-20))
+  );
+  --color-secondary-900: color(
+    var(--color-secondary) shade(var(--percentage-40))
+  );
+
   --color-success-100: color(var(--color-success) tint(var(--percentage-40)));
   --color-success-300: color(var(--color-success) tint(var(--percentage-20)));
   --color-success-500: var(--color-success);
   --color-success-700: color(var(--color-success) shade(var(--percentage-20)));
   --color-success-900: color(var(--color-success) shade(var(--percentage-40)));
- 
+
   --color-info-100: color(var(--color-info) tint(var(--percentage-40)));
   --color-info-300: color(var(--color-info) tint(var(--percentage-20)));
   --color-info-500: var(--color-info);
   --color-info-700: color(var(--color-info) shade(var(--percentage-20)));
   --color-info-900: color(var(--color-info) shade(var(--percentage-40)));
- 
+
   --color-warning-100: color(var(--color-warning) tint(var(--percentage-40)));
   --color-warning-300: color(var(--color-warning) tint(var(--percentage-20)));
   --color-warning-500: var(--color-warning);
   --color-warning-700: color(var(--color-warning) shade(var(--percentage-20)));
   --color-warning-900: color(var(--color-warning) shade(var(--percentage-40)));
- 
+
   --color-danger-100: color(var(--color-danger) tint(var(--percentage-40)));
   --color-danger-300: color(var(--color-danger) tint(var(--percentage-20)));
   --color-danger-500: var(--color-danger);
@@ -77,46 +85,53 @@
 }
 
 @each $weight in 100, 300, 500, 700, 900 {
-  @each $brand in primary, secondary, success, info, warning, danger, dark, light, link {
-     :root {
+  @each $brand in primary, secondary, success, info, warning, danger, dark,
+    light, link
+  {
+    :root {
       --u-background-color-$(brand)-$(weight) {
         background-color: var(--color-$(brand)-$(weight));
       }
-      :root {
+    }
+    :root {
         --u-bgc-$(brand)-$(weight) {
           background-color: var(--color-$(brand)-$(weight));
         }
       }
     }
   }
-}
 
 @each $weight in 100, 300, 500, 700, 900 {
-  @each $brand in primary, secondary, success, info, warning, danger, dark, light, link {
-     :root {
+  @each $brand in primary, secondary, success, info, warning, danger, dark,
+    light, link
+  {
+    :root {
       --u-border-color-$(brand)-$(weight) {
         border-color: var(--color-$(brand)-$(weight));
       }
-      :root {
+    }
+    :root {
         --u-bdc-$(brand)-$(weight) {
           border-color: var(--color-$(brand)-$(weight));
         }
-      }  
+      }
     }
   }
-}
+
 
 @each $weight in 100, 300, 500, 700, 900 {
-  @each $brand in primary, secondary, success, info, warning, danger, dark, light, link {
-     :root {
+  @each $brand in primary, secondary, success, info, warning, danger, dark,
+    light, link
+  {
+    :root {
       --u-text-color-$(brand)-$(weight) {
         color: var(--color-$(brand)-$(weight));
       }
-      :root {
+    }
+    :root {
         --u-tc-$(brand)-$(weight) {
           color: var(--color-$(brand)-$(weight));
         }
-      }  
+      }
     }
   }
-}
