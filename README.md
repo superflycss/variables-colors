@@ -10,4 +10,4 @@ See [Usage](https://github.com/superfly-css/superfly-css/#usage)
 
 ## Tests
 
-See [superfly-css-utilities-colors](https://github.com/superfly-css/superfly-css-utilities-colors/)
+See [@superflycss/utilities-colors](https://superflycss.github.io/utilities-colors/target/test/html/)
