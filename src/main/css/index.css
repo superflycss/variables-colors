@@ -44,10 +44,6 @@ PERCENTAGES USED IN COLOR CALCULATIONS
 ======================================= */
 @import "./percentages/";
 /* =======================================
-NOTIFICATION COLORS
-======================================= */
-@import "./notifications/";
-/* =======================================
 BROWSER SUPPORTED COLOR NAMES
 ======================================= */
 @import "./browser/";
