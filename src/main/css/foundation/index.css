@@ -1,3 +1,5 @@
+@import '../browser/';
+
 :root {
     --color-white:                   #fff;
     --color-text:                    var(--color-dark-gray);
