@@ -27,9 +27,16 @@
    [100, 300, 500, 700, 900].
    ======================================= */
 
-
 /* =======================================
-MATERIAL DESIGN COLORS VARIABLES
+FOUNDATION COLOR VARIABLES
+======================================= */
+@import "./foundation/";
+/* =======================================
+STATE COLOR VARIABLES
+======================================= */
+@import "./state/";
+/* =======================================
+MATERIAL DESIGN COLOR VARIABLES
 ======================================= */
 @import "./material-design/";
 /* =======================================
@@ -52,41 +59,6 @@ THREE DIGIT COLOR CODES
 SUPERFLYCSS COLORS
 ======================================= */
 @import "./superfly/";
-
-
-/* 1 */
-:root {
-  --color-white:                   #fff;
-  --color-text:                    var(--color-dark-gray);
-  --color-text-muted:              var(--color-light-gray);
-  --color-link:                    var(--color-primary);
-  --color-link-hover:              color(var(--color-link) blackness(var(--percentage-link-hover)));
-  --color-abbr-border:             var(--color-light-gray);
-  --color-table-background:        transparent;
-  --color-table-background-accent: #f9f9f9;
-  --color-table-background-hover:  #f5f5f5;
-  --color-table-background-active: var(--color-table-background-hover);
-  --color-table-border-color:      var(--color-light-gray);
-}
-
-/* 2 */
-:root {
-  --state-success-text:        #3c763d;
-  --state-success-background:  #dff0d8;
-  --state-success-border:      color(var(--state-success-background) blackness(5%));
-
-  --state-info-text:           #31708f;
-  --state-info-background:     #d9edf7;
-  --state-info-border:         color(var(--state-info-background) blackness(7%));
-
-  --state-warning-text:        #8a6d3b;
-  --state-warning-background:  #fcf8e3;
-  --state-warning-border:      color(var(--state-warning-background) blackness(5%));
-
-  --state-danger-text:         #a94442;
-  --state-danger-background:   #f2dede;
-  --state-danger-border:       color(var(--state-danger-background) blackness(5%));
-}
 
 /**
  * Inherit the ancestor's text color.
