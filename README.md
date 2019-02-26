@@ -1,4 +1,6 @@
-# Color variables
+# Color variables - DEPRECATED
+
+The color variables are now maintained in @superflycss/utilities-colors
 
 ## Installation
 
